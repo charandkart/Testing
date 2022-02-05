@@ -8,7 +8,7 @@ const Meta = (props) => {
 
   return (
     <>
-      <Helmet>
+      <Helmet htmlAttributes>
         <title>{title}</title>
         <link rel="canonical" href={url} />
         <meta name="description" content={description} />
@@ -18,7 +18,10 @@ const Meta = (props) => {
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="og:url" content={url} />
-        <meta property="og:site_name" content={"DOLPHINSKART.name"} />
+        <meta
+          property="og:site_name"
+          content={"https://quirky-visvesvaraya-5f51ff.netlify.app/"}
+        />
 
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
