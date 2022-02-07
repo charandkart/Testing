@@ -3,6 +3,7 @@ import "./App.css";
 import Article from "./Pages/Article";
 import ArticleList from "./Pages/ArticleList";
 import Help from "./Pages/Help";
+
 import Home from "./Pages/Home";
 
 function App() {
@@ -12,14 +13,14 @@ function App() {
         <div>
           <Link to="/articles">Articles</Link>
           <Link to="/help">Help</Link>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </div>
       </header>
       <Routes>
         <Route exact path="/articles" element={<ArticleList />} />
         <Route path="/article/:slug" element={<Article />} />
         <Route path="/help" element={<Help />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
     </>
   );
