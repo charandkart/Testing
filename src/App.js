@@ -10,16 +10,16 @@ function App() {
     <>
       <header>
         <div>
-          <Link to="/">Home</Link>
           <Link to="/articles">Articles</Link>
           <Link to="/help">Help</Link>
+          <Link to="/">Home</Link>
         </div>
       </header>
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route exact path="/articles" element={<ArticleList />} />
         <Route path="/article/:slug" element={<Article />} />
         <Route path="/help" element={<Help />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </>
   );
