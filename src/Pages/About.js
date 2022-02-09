@@ -5,10 +5,10 @@ import AboutPage from "./AboutPage";
 const About = () => {
   return (
     <div>
-      <>
-        <Link to="/aboutPage">AboutPage</Link>
-      </>
+      <Link to="/aboutPage">AboutPage</Link>
+
       <Route to="/aboutPage" component={AboutPage} />
+
       <h1>AboutPage</h1>
     </div>
   );

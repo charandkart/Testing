@@ -27,7 +27,7 @@ function App() {
         <Routes>
           <Route exact path="/articles" element={<ArticleList />} />
           <Route path="/article/:slug" element={<Article />} />
-          <Route path="/help" element={<Help />} />
+          <Route path="/help" component={Help} />
           <Route path="/home" element={<Home />} />
         </Routes>
       </div>
