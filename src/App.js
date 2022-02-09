@@ -18,19 +18,19 @@ function App() {
         />
         <meta name="keyword" content="Movies,Tv Series,Search Movies,News" />
       </Helmet>
-      <header>
-        <div>
-          <Link to="/articles">Articles</Link>
-          <Link to="/help">Help</Link>
-          <Link to="/">Home</Link>
-        </div>
-      </header>
-      <Routes>
-        <Route exact path="/articles" element={<ArticleList />} />
-        <Route path="/article/:slug" element={<Article />} />
-        <Route path="/help" element={<Help />} />
-        <Route path="/" element={<Home />} />
-      </Routes>
+
+      <div>
+        <Link to="/articles">Articles</Link>
+        <Link to="/help">Help</Link>
+        <Link to="/home">Home</Link>
+
+        <Routes>
+          <Route exact path="/articles" element={<ArticleList />} />
+          <Route path="/article/:slug" element={<Article />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/home" element={<Home />} />
+        </Routes>
+      </div>
     </>
   );
 }
